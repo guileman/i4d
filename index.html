@@ -1,17 +1,202 @@
 <!doctype html>
-<html lang="">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>I4D Ingeniería</title>
-    <meta name="description" content="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/i4d/assets/index-CK31gxUd.js"></script>
-    <link rel="stylesheet" crossorigin href="/i4d/assets/index--KczGfLa.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>i4d | Ingeniería mecánica, simulación FEM/CFD y diseño de equipos</title>
+<meta name="description" content="i4d: diseño mecánico, simulación FEM/CFD, estructuras, desarrollo de máquinas y relevamiento con drones. Roldán, Santa Fe, Argentina.">
+<meta name="theme-color" content="#0e1116">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#inicio" aria-label="i4d, inicio"><img src="img/logo.png" width="34" height="34" alt=""><span>i4d</span></a>
+  <nav aria-label="Principal">
+    <a href="#servicios">Servicios</a>
+    <a href="#trabajos">Trabajos</a>
+    <a href="#clientes">Clientes</a>
+    <a href="#contacto" class="btn sm">Contacto</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Ingeniería mecánica · Simulación · Desarrollo de equipos</p>
+      <h1>Del cálculo a la máquina <em>funcionando</em>.</h1>
+      <p class="lead">Diseñamos, calculamos y documentamos equipos industriales, estructuras y máquinas especiales. Validamos con simulación FEM/CFD antes de fabricar.</p>
+      <p class="cta">
+        <a class="btn" href="#contacto">Contanos tu proyecto</a>
+        <a class="btn ghost" href="#trabajos">Ver trabajos</a>
+      </p>
+    </div>
+    <figure class="sheet hero-sheet">
+      <img src="img/cargador-render.webp" width="774" height="509" alt="Modelo 3D de un cargador de cereales para camiones tova">
+      <figcaption><b>Cargador de cereales</b><span>Modelo 3D → equipo fabricado</span></figcaption>
+    </figure>
+  </div>
+  <ul class="wrap stats" aria-label="Datos de la empresa">
+    <li><b>20 años</b> de experiencia en diseño industrial</li>
+    <li><b>FEM / CFD</b> con software abierto y comercial</li>
+    <li><b>Planos</b> de fabricación, montaje y BOM</li>
+  </ul>
+</section>
+
+<section id="servicios" class="sec">
+  <div class="wrap">
+    <p class="eyebrow">Qué hacemos</p>
+    <h2>Servicios</h2>
+    <div class="cards">
+      <article class="card">
+        <img src="img/maquina.webp" width="585" height="1040" loading="lazy" alt="Máquina de producción terminada">
+        <div><h3>Diseño mecánico y de máquinas</h3>
+        <p>Modelado 3D de piezas, conjuntos y estructuras. Planos de fabricación y montaje, listas de materiales y archivos DXF/DWG.</p></div>
+      </article>
+      <article class="card">
+        <img src="img/fem-pieza.webp" width="700" height="529" loading="lazy" alt="Resultado de tensiones por elementos finitos en una pieza circular">
+        <div><h3>Simulación FEM / CFD</h3>
+        <p>Análisis estructural y térmico, y dinámica de fluidos. Verificamos resistencia y deformaciones antes de fabricar.</p></div>
+      </article>
+      <article class="card">
+        <img src="img/prototipos.webp" width="900" height="506" loading="lazy" alt="Prototipo mecánico en banco de ensayo">
+        <div><h3>Prototipos y desarrollo</h3>
+        <p>Del concepto al prototipo funcional: ensayo, ajuste y puesta a punto junto a producción.</p></div>
+      </article>
+      <article class="card text">
+        <div><h3>Estructuras y equipos industriales</h3>
+        <p>Estructuras metálicas, shelters, skids y plataformas, con cálculo estructural según normativa.</p></div>
+      </article>
+      <article class="card text">
+        <div><h3>Drones y relevamiento</h3>
+        <p>Fotogrametría aérea, relevamientos topográficos y replanteos con GNSS RTK.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="trabajos" class="sec alt">
+  <div class="wrap">
+    <p class="eyebrow">Portfolio</p>
+    <h2>Trabajos realizados</h2>
+    <p class="lead sm">Una selección de equipos diseñados por i4d. Tocá una imagen para verla en grande.</p>
+
+    <div class="works">
+      <article class="work">
+        <div class="pair">
+          <button class="sheet" data-zoom><img src="img/cargador-render.webp" width="774" height="509" loading="lazy" alt="Cargador de cereales, modelo 3D"></button>
+          <button class="sheet" data-zoom><img src="img/cargador-obra.webp" width="825" height="619" loading="lazy" alt="Cargador de cereales fabricado, en taller"></button>
+        </div>
+        <h3><i>01</i> Cargador de cereales para camiones tova</h3>
+        <p>Cargador inclinado sobre ruedas, desde el modelo 3D hasta el equipo fabricado.</p>
+        <p class="tags"><span>Diseño 3D</span><span>Planos</span><span>Fabricación</span></p>
+      </article>
+
+      <article class="work">
+        <div class="pair">
+          <button class="sheet" data-zoom><img src="img/extractora-render.webp" width="676" height="666" loading="lazy" alt="Extractora de tubos de goma, modelo 3D"></button>
+          <button class="sheet" data-zoom><img src="img/extractora-obra.webp" width="823" height="616" loading="lazy" alt="Extractora de tubos de goma terminada"></button>
+        </div>
+        <h3><i>02</i> Extractora de tubos de goma de producción</h3>
+        <p>Máquina de línea de producción con bastidor soldado y accionamientos eléctricos.</p>
+        <p class="tags"><span>Maquinaria</span><span>Diseño 3D</span><span>Producción</span></p>
+      </article>
+
+      <article class="work">
+        <div class="pair three">
+          <button class="sheet wide" data-zoom><img src="img/pluma.webp" width="593" height="702" loading="lazy" alt="Pluma giratoria para mantenimiento"></button>
+          <button class="sheet" data-zoom><img src="img/pluma-fem1.webp" width="617" height="534" loading="lazy" alt="Simulación FEM de desplazamientos en un componente de la pluma"></button>
+          <button class="sheet" data-zoom><img src="img/pluma-fem2.webp" width="521" height="506" loading="lazy" alt="Simulación FEM de desplazamientos en el fuste de la pluma"></button>
+        </div>
+        <h3><i>03</i> Pluma para mantenimiento</h3>
+        <p>Pluma giratoria verificada con simulación FEM de desplazamientos.</p>
+        <p class="tags"><span>FEM</span><span>Izaje</span><span>Diseño 3D</span></p>
+      </article>
+
+      <article class="work">
+        <button class="sheet" data-zoom><img src="img/shelter.webp" width="900" height="554" loading="lazy" alt="Estructura de un shelter para minería"></button>
+        <h3><i>04</i> Shelters para minería</h3>
+        <p>Diseño y cálculo estructural para izaje y servicio, según CIRSOC.</p>
+        <p class="tags"><span>Estructuras</span><span>CIRSOC</span><span>Cálculo</span></p>
+      </article>
+
+      <article class="work">
+        <button class="sheet" data-zoom><img src="img/bobinadora.webp" width="846" height="516" loading="lazy" alt="Bobinadora de cable, modelo 3D"></button>
+        <h3><i>05</i> Bobinadora de cable</h3>
+        <p>Equipo de bobinado con bastidor estructural, motorreductor y mecanismos de guiado.</p>
+        <p class="tags"><span>Maquinaria</span><span>Diseño 3D</span></p>
+      </article>
+
+      <article class="work">
+        <button class="sheet" data-zoom><img src="img/plataformas.webp" width="676" height="577" loading="lazy" alt="Plataformas de acceso con piso de rejilla y barandas"></button>
+        <h3><i>06</i> Plataformas de acceso</h3>
+        <p>Plataformas de acceso con piso de rejilla y barandas.</p>
+        <p class="tags"><span>Estructuras</span><span>Seguridad</span></p>
+      </article>
+
+      <article class="work">
+        <button class="sheet" data-zoom><img src="img/carros.webp" width="900" height="383" loading="lazy" alt="Carro motorizado sobre riel, modelo 3D"></button>
+        <h3><i>07</i> Carros motorizados</h3>
+        <p>Carros de traslación sobre riel con accionamiento propio.</p>
+        <p class="tags"><span>Mecanismos</span><span>Diseño 3D</span></p>
+      </article>
+
+      <article class="work">
+        <button class="sheet" data-zoom><img src="img/guia.webp" width="776" height="615" loading="lazy" alt="Guía de laminación, conjunto mecánico"></button>
+        <h3><i>08</i> Guía de laminación</h3>
+        <p>Conjunto mecánico de guiado para línea de laminación.</p>
+        <p class="tags"><span>Siderurgia</span><span>Diseño 3D</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="clientes" class="sec">
+  <div class="wrap">
+    <p class="eyebrow">Confianza</p>
+    <h2>Empresas con las que trabajamos</h2>
+    <ul class="clients">
+      <li>Industrias Juan F. Secco</li>
+      <li>Terragene</li>
+      <li>Gadesma</li>
+      <li>Infya</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contacto" class="sec alt">
+  <div class="wrap contact">
+    <div>
+      <p class="eyebrow">Contacto</p>
+      <h2>Contanos tu proyecto</h2>
+      <p class="lead sm">Te respondemos en 24 horas hábiles.</p>
+      <ul class="info">
+        <li><span>Correo</span><a href="mailto:i4dsrl@gmail.com">i4dsrl@gmail.com</a></li>
+        <li><span>Teléfono</span><a href="tel:+543416904961">+54 341 690-4961</a></li>
+        <li><span>WhatsApp</span><a href="https://wa.me/543416904961">Escribinos</a></li>
+        <li><span>Ubicación</span>Roldán, Santa Fe, Argentina</li>
+      </ul>
+    </div>
+    <form action="mailto:i4dsrl@gmail.com" method="post" enctype="text/plain">
+      <label>Nombre<input name="nombre" required autocomplete="name"></label>
+      <label>Correo<input name="correo" type="email" required autocomplete="email"></label>
+      <label>Mensaje<textarea name="mensaje" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y">2026</span> i4d. Todos los derechos reservados.</span>
+    <a href="#inicio">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<dialog id="zoom"><form method="dialog"><button aria-label="Cerrar">✕</button></form><img alt=""></dialog>
+<script src="script.js" defer></script>
+</body>
 </html>
