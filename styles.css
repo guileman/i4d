@@ -145,3 +145,8 @@ dialog button{width:32px;height:32px;border-radius:50%;border:0;background:var(-
 
 a:focus-visible,button:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+.sims .sheet{cursor:zoom-in;aspect-ratio:1000/596;border:0;border-radius:0;background:#0b0f14}
+.sims .sheet:hover{outline:2px solid var(--ac);outline-offset:-2px}
+@media(min-width:760px){.sims .wide{grid-column:1/-1}}
+.sec>.wrap>.tags{margin-top:16px}
